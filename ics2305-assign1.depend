@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1559945134 source:e:\assignment\ics2305-assign1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"ics2305-assign1-support.h"
+
+1559946783 source:e:\assignment\ics2305-assign1\ics2305-assign1-support.c
+	<math.h>
+
+1559941104 e:\assignment\ics2305-assign1\ics2305-assign1-support.h
+
