@@ -15,35 +15,35 @@ int float_display_array(float f_array[])
  }
 }
 
-int integer_display_array(float f_array[],int m_array[]){
+int integer_display_array(float f_array[],int i_array[]){
 
     printf("Integer array: \n");
     for (int i = 0; i < 20; ++i)
     {
-       m_array[i]= round(f_array[i]);
-        printf(" integer[%d] =%d \n",i, m_array[i]);
+       i_array[i]= round(f_array[i]);
+        printf(" integer[%d] =%d \n",i, i_array[i]);
     }
 }
 
-int float_evens(int f_even,  float f_array[]){
-    int i;
+int float_evens(float f_array[]){
+    int i, f_even = 0;
      for (i = 0; i < 20; i++)
         {
-            if (fmod(f_array[i],2)==0)
+            if ((int)f_array[i]%2==0)
             {
                 f_even ++;
             }
         }
-       printf("%d",f_even);
+       return f_even;
 }
-int integer_evens(int i_even, int m_array[]){
-    int i;
+int integer_evens(int i_array[]){
+    int i,i_even = 0;
      for (i = 0; i < 20; i++)
         {
-            if ((m_array[i]%2) == 0)
+            if ( i_array[i]%2 == 0)
             {
                 i_even ++;
             }
         }
-       printf("%d", i_even);
+       return i_even;
 }

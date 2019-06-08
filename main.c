@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     // Local variables
 	// NOTE: this is where you will want to add some new variables
     float f_array[20];
-    int i, m_array[20], f_even = 0, i_even = 0 ;
+    int i, m_array[25], i_array[20];
 
 
 
@@ -24,13 +24,13 @@ int main(int argc, char *argv[])
 
 	// Step #2 - convert the input values
 	float_display_array(f_array);
-	integer_display_array(f_array,m_array);
+    printf("\n");
+	integer_display_array(f_array,i_array);
+    printf("\n");
+	printf("The floating point array has  %d  even numbers,and the integer array has  %d  even numbers.",float_evens(f_array),integer_evens(i_array));
+    printf("\n");
 
-	printf("The floating point array has");
-	float_evens(f_even);
-    printf("even numbers,and the integer array has\t");
-    integer_evens(i_even);
-    printf("even numbers.");
+
 
  return 0;
 }
