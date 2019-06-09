@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 
     // Local variables
 	// NOTE: this is where you will want to add some new variables
-    float f_array[20];
+    float f_array[20],mi_array[25];
     int i, m_array[25], i_array[20];
 
 
@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
     printf("\n");
 	printf("The floating point array has  %d  even numbers,and the integer array has  %d  even numbers.",float_evens(f_array),integer_evens(i_array));
     printf("\n");
+    printf(make_array(m_array,25,3,17));
 
 
 
