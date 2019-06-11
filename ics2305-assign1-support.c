@@ -50,11 +50,11 @@ int integer_evens(int i_array[]){
 
 int make_array(int m_array[],int range,int exp,int md){
     int i,j, freq[25], count;
-    printf("Array (3^i) mod 17 \n");
+
     for(i = 0;i<range;i++){
         m_array[i] = i;
         freq[i]=-1;
-        m_array[i] = (int)pow(exp,m_array[i])% (int)md;
+        m_array[i] = (long long int)pow(exp,m_array[i])% (long long int)md;
     }
         for(i=0;i<range;i++){
             printf("arr[%d] = %ld\n",i,m_array[i]);
@@ -71,7 +71,7 @@ int make_array(int m_array[],int range,int exp,int md){
         }
         for(i=0;i<range;i++){
             if(freq[i]!=0){
-                printf("\n");
+
                 printf("Value %d is a most frequently occuring value (%d times).\n",m_array[i],freq[i]);
             }
         }
